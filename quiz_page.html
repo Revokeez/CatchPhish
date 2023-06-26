@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script type="text/JavaScript" src="backend.js"></script>    
+    <title>Test</title>
+</head>
+<body>  
+    <div id = "nav">
+        <ul>
+            <li><a href="first_Page.html"><button>Home</button> </a></li>
+            <li><a href=""><button>About</button> </a></li>
+        </ul>
+        <h1>Test</h1>
+    </div>
+
+    <div id = "question-style">
+        <section id = "q0">
+            <h3>Question 1</h3>
+            <label>
+                <input type="radio" name = "question_0" value = "1" onclick="Answers(0, this)">answer1<br>
+            </label> 
+            <label>
+                <input type="radio" name = "question_0" value = "2" onclick="Answers(0, this)">answer2<br>                
+            </label>
+            <label>
+                <input type="radio" name = "question_0" value = "3" onclick="Answers(0, this)">answer3<br>                
+            </label>
+            <label>
+                <input type="radio" name = "question_0" value = "4" onclick="Answers(0, this)">answer4<br>
+            </label>    
+        </section>
+        <section id="q1">
+            <h3>Question 2</h3>
+            <label>
+                <input type="radio" name = "question_1" value = "1" onclick="Answers(1, this)">answer1<br>
+            </label> 
+            <label>
+                <input type="radio" name = "question_1" value = "2" onclick="Answers(1, this)">answer2<br>                
+            </label>
+            <label>
+                <input type="radio" name = "question_1" value = "3" onclick="Answers(1, this)">answer3<br>                
+            </label>
+            <label>
+                <input type="radio" name = "question_1" value = "4" onclick="Answers(1, this)">answer4<br>
+            </label>    
+        </section>
+
+    </div>
+
+
+<button onclick="CorrectAnswers()" id = "test3">Finish</button>
+<h2>Correct answers:<span id="result"></span></h2>
+
+</body>
+</html>
