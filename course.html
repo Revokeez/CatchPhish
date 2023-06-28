@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="course.css">
+    <script src="course.js"></script>
     <title>Course</title>
 </head>
 <body>
     <div id="header">
-        <div id="nav">
-            <ul>
-                <li><a href="first_Page.html"><button>Home</button></a></li>
-                <li><a href=""><button>About</button></a></li>
-            </ul>
+        <a href="first_Page.html"><button>Home</button></a>
+        <a href=""><button>About</button></a>
+            <div id="headertitle">
+                <h1>Course</h1>
+            </div>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#part1" onclick="showContent('part1')">Part 1</a></li>
+            <li><a href="#part2" onclick="showContent('part2')">Part 2</a></li>
+            <li><a href="#part3" onclick="showContent('part3')">Placeholder</a></li>
+            <li><a href="#part4" onclick="showContent('part4')">Placeholder</a></li>
+            <li><a href="#part5" onclick="showContent('part5')">Placeholder</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <div id="part1" class="content">
+            <h1>Part 1</h1>
+            <p>Some paragraph</p>
+        </div>
+        <div id="part2" class="content">
+            <h1>Part 2</h1>
+            <p>Some paragraph</p>
+        </div>
+        <div id="part3" class="content">
+            <h1>Part 3</h1>
+            <p>Some paragraph</p>
+        </div>
+        <div id="part4" class="content">
+            <h1>Part 4</h1>
+            <p>Some paragraph</p>
+        </div>
+        <div id="part5" class="content">
+            <h1>Part 5</h1>
+            <p>Some paragraph</p>
         </div>
     </div>
 </body>

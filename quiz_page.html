@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/JavaScript" src="backend.js"></script>
 </head>
 
 <body>
+<div id="header">
     <div id="nav">
         <ul>
-            <li><a href="first_Page.html"><button>Home</button> </a></li>
+            <li><a href="first_Page.html"><button>Home</button></a></li>
             <li><a href=""><button>About</button> </a></li>
+            <li id = "welcome-animation">Test</li>
         </ul>
-        <h1>Test</h1>
     </div>
+</div>
+
 
     <div id="question-style">
         <section id="q0">
-            <h3>Question 1</h3>
+            <h3>Question 1: Carlos is a bad friend</h3>
             <label>
-                <input type="radio" name="question_0" value="1" onclick="Answers(0, this)">answer1<br>
+                <input type="radio" name="question_0" value="1" onclick="Answers(0, this)"> yes
             </label>
             <label>
-                <input type="radio" name="question_0" value="2" onclick="Answers(0, this)">answer2<br>
+                <input type="radio" name="question_0" value="2" onclick="Answers(0, this)"> answer2
             </label>
             <label>
-                <input type="radio" name="question_0" value="3" onclick="Answers(0, this)">answer3<br>
+                <input type="radio" name="question_0" value="3" onclick="Answers(0, this)"> answer3
             </label>
             <label>
-                <input type="radio" name="question_0" value="4" onclick="Answers(0, this)">answer4<br>
+                <input type="radio" name="question_0" value="4" onclick="Answers(0, this)"> answer4
             </label>
         </section>
         <section id="q1">
@@ -49,7 +53,126 @@
                 <input type="radio" name="question_1" value="4" onclick="Answers(1, this)">answer4<br>
             </label>
         </section>
-
+        <section id="q2">
+            <h3>Question 3</h3>
+            <label>
+                <input type="radio" name="question_2" value="1" onclick="Answers(2, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_2" value="2" onclick="Answers(2, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_2" value="3" onclick="Answers(2, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_2" value="4" onclick="Answers(2, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q3">
+            <h3>Question 4</h3>
+            <label>
+                <input type="radio" name="question_3" value="1" onclick="Answers(3, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_3" value="2" onclick="Answers(3, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_3" value="3" onclick="Answers(3, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_3" value="4" onclick="Answers(3, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q4">
+            <h3>Question 5</h3>
+            <label>
+                <input type="radio" name="question_4" value="1" onclick="Answers(4, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_4" value="2" onclick="Answers(4, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_4" value="3" onclick="Answers(4, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_4" value="4" onclick="Answers(4, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q5">
+            <h3>Question 6</h3>
+            <label>
+                <input type="radio" name="question_5" value="1" onclick="Answers(5, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_5" value="2" onclick="Answers(5, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_5" value="3" onclick="Answers(5, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_5" value="4" onclick="Answers(5, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q6">
+            <h3>Question 7</h3>
+            <label>
+                <input type="radio" name="question_6" value="1" onclick="Answers(6, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_6" value="2" onclick="Answers(6, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_6" value="3" onclick="Answers(6, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_6" value="4" onclick="Answers(6, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q7">
+            <h3>Question 8</h3>
+            <label>
+                <input type="radio" name="question_7" value="1" onclick="Answers(7, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_7" value="2" onclick="Answers(7, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_7" value="3" onclick="Answers(7, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_7" value="4" onclick="Answers(7, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q8">
+            <h3>Question 9</h3>
+            <label>
+                <input type="radio" name="question_8" value="1" onclick="Answers(8, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_8" value="2" onclick="Answers(8, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_8" value="3" onclick="Answers(8, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_8" value="4" onclick="Answers(8, this)">answer4<br>
+            </label>
+        </section>
+        <section id="q9">
+            <h3>Question 10</h3>
+            <label>
+                <input type="radio" name="question_9" value="1" onclick="Answers(9, this)">answer1<br>
+            </label>
+            <label>
+                <input type="radio" name="question_9" value="2" onclick="Answers(9, this)">answer2<br>
+            </label>
+            <label>
+                <input type="radio" name="question_9" value="3" onclick="Answers(9, this)">answer3<br>
+            </label>
+            <label>
+                <input type="radio" name="question_9" value="4" onclick="Answers(9, this)">answer4<br>
+            </label>
+        </section>
     </div>
 
 

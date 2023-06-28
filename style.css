@@ -27,7 +27,7 @@ body {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 100px;
-  margin-left: 650px;
+  margin-left: 500px;
 }
 
 #test3 {
@@ -40,7 +40,7 @@ body {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 20px;
-  margin-left: 50%;
+  margin-left: 47.6%;
 }
 
 #test:hover {
@@ -58,12 +58,10 @@ body {
 
 #nav {
   position: sticky;
-  margin: 25px;
-  text-align: right;
+  text-align: left;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   border-color: black;
+  padding-top: 0px;
 }
 
 #header {
@@ -71,11 +69,12 @@ body {
 }
 
 #question-style section {
-  margin-left: 38%;
-  border: 3px solid black;
+  margin-left: 36.5%;
+  border: 5px solid black;
   margin-bottom: 10px;
   width: 500px;
   font-size: 25px;
+  background-color: #fff;
 }
 
 label:hover {
@@ -93,9 +92,10 @@ label:hover {
 }
 
 #welcome-animation {
-  text-align: center;
-  margin-bottom: 10px;
-  width: 100%;
+  font-size: 40px;
+  color: #fff;
+  margin-left: 33.9%;
+  padding-top: 0px;
   animation-name: welcome;
   animation-duration: 4s;
 }
@@ -104,9 +104,11 @@ ul li button {
   border: 3px solid black;
   border-radius: 15px;
   background-color: #fff;
-  font-size: 33px;
+  font-size: 25px;
   cursor: pointer;
   font-family: sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 ul li button:hover {
@@ -117,7 +119,7 @@ ul li button:hover {
   font-size: 22px;
   text-align: center;
   border: 2px solid black;
-  margin-left: 28%;
+  margin-left: 24%;
   max-width: 1000px;
 }
 
@@ -129,7 +131,7 @@ li {
 }
 
 img {
-  margin-left: 30%;
+  margin-left: 25%;
   margin-bottom: 10px;
 }
 
