@@ -1,5 +1,5 @@
-let isRight = [1, 2, 3, 1, 1, 1, 4, 4, 3, 2];
-let arraysLength = [2, 4, 4, 4, 4, 4, 4, 4, 4, 4];
+let isRight = [1, 3, 4, 4, 1, 2, 1, 1, 4, 2];
+let arraysLength = [2, 4, 4, 4, 2, 4, 3, 2, 4, 2];
 let selectedArraysPosition = [];
 let selectedOpcion = [];
 let howManyCorrect = 0;
