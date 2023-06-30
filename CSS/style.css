@@ -1,70 +1,35 @@
+:root {
+  --main-color: #ffffff;
+  --secondary-color1: #FBD37B;
+  --secondary-color2: #38761d;
+  --main-font: 'Poppins', sans-serif;
+}
+
 body {
-  background-color: rgb(213, 224, 232);
+  background-color: var(--main-color);
+  font-family: var(--main-font);
   margin: 0;
 }
 
-
-#test {/*Buttons */
-  font-family: sans-serif;
-  font-size: 33px;
-  font-family: sans-serif;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
-  background-color: #297;
-  color: #fff;
-  border: 0px;
-  border-radius: 10px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-left: 25%;
-  transition: font-size 35px;
+a {
+  text-decoration: none;
 }
 
-#test2 {
-  font-family: sans-serif;
-  font-size: 33px;
-  font-family: sans-serif;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
-  background-color: #297;
-  color: #fff;
-  border: 0px;
-  border-radius: 10px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 100px;
-  margin-left: 532px;
-  margin-right: 400px;
+#navlinks {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: var(--main-color);
 }
 
-#test3 {
-  font-family: sans-serif;
-  font-size: 33px;
-  background-color: #297;
-  color: #fff;
-  font-family: sans-serif;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
-  border: 0px;
-  border-radius: 10px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-left: 50%;
-}
-
-#test:hover {
-  background-color: #3a8;
-}
-
-#test2:hover {
-  background-color: #3a8;
-}
-
-#test3:hover {
-  background-color: #3a8;
+#navlinks:hover {
+  color: var(--secondary-color1);
 }
 
 #nav {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   font-family: sans-serif;
   box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
   border-color: black;
@@ -72,7 +37,7 @@ body {
 }
 
 #header {
-  background-color: #297;
+  background-color: var(--secondary-color2);
   position: sticky;
   top: 0;
   left: 0;
@@ -80,74 +45,31 @@ body {
   width: 100%;
 }
 
-#question-style section {
-  margin-left: 36.5%;
-  border: 5px solid black;
-  margin-bottom: 10px;
-  width: 500px;
-  font-size: 25px;
-  background-color: #fff;
-}
-
-label:hover {
-  background-color: #3a8;
-}
-
-@keyframes welcome {
+@keyframes fade-in {
   0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-#welcome-animation {
-  font-size: 40px;
-  font-family: sans-serif;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+#logo {
+  font-size: 3rem;
+  font-family: var(--main-font);
   color: #fff;
-  margin-left: 33.9%;
-  padding-top: 0px;
-  animation-name: welcome;
-  animation-duration: 4s;
-}
-
-ul li button {
-  border: 3px solid black;
-  border-radius: 15px;
-  background-color: #fff;
-  font-size: 33px;
-  font-family: sans-serif;
-  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  font-family: sans-serif;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-ul li button:hover {
-  background-color: yellow;
-}
-
-#paragraph {
-  font-size: 22px;
   text-align: center;
-  border: 2px solid black;
-  margin-left: 24%;
-  max-width: 1000px;
+  justify-content: center;
+  display: inline-block;
+  animation: fade-in 1s ease-in-out;
 }
 
 li {
   display: inline;
   align-items: center;
   text-align: center;
-}
-
-img {
-  margin-left: 25%;
-  margin-bottom: 10px;
 }
 
 h1 {
