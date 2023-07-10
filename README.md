@@ -6,7 +6,7 @@ Catch Phish is an online platform to learn about Phishing emails and how to prot
 
 ## Developers:
 
-  * [Edwin J. Vazquez](https://github.com/Revokeez)
+  * [Edwin M. Vazquez](https://github.com/Revokeez)
   * [Carlos Negron](https://github.com/EkkoCTRL)
   * [Nordiel E. Martinez](https://github.com/nordiel)
   * [Chelimar Morales]()
