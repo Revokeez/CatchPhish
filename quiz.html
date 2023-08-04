@@ -1,272 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch Phish - Quiz</title>
 
-<head>
+    <link rel="icon" type="image/x-icon" href="public/catchfitch.ico" />
+    <link rel="stylesheet" href="styles/pico.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="/"><strong>Catch Phish</strong></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/course.html"><button>Go to course</button></a>
+        </li>
+      </ul>
+    </nav>
 
-    <title>Quiz</title>
+    <main>
+      <h1 class="page-heading">Quiz</h1>
 
-    <link href="CSS/main-style.css" type="text/css" rel="stylesheet" />
-    <script type="script" src="JS/main-script.js"></script>
+      <!-- Question 1 -->
+      <article id="q1">
+        <header>
+          <strong>
+            Question 1: When someone sends you a fishy email most of the time
+            will be direct or indirect?
+          </strong>
+        </header>
 
-</head>
+        <fieldset>
+          <label for="q1_1">
+            <input
+              type="radio"
+              id="q1_1"
+              name="q1"
+              value="1"
+              onclick="{GetAnswers(0, this)}"
+            />
+            Direct
+          </label>
+          <label for="q1_2">
+            <input
+              type="radio"
+              id="q1_2"
+              name="q1"
+              value="2"
+              onclick="{GetAnswers(0, this)}"
+            />
+            Indirect
+          </label>
+        </fieldset>
+      </article>
 
-<body>
+      <!-- Question 2 -->
+      <article id="q2">
+        <header>
+          <strong>Question 2: Definition of phishing attack</strong>
+        </header>
 
-    <!-- Nav bar -->
-    <div id="header">
+        <fieldset>
+          <label for="q2_1">
+            <input
+              type="radio"
+              id="q2_1"
+              name="q2"
+              value="1"
+              onclick="{GetAnswers(1, this)}"
+            />
+            A type of cyber attack that involves exploiting software vulnerabilities to gain unauthorized access to a system or network.
+          </label>
+          <label for="q2_2">
+            <input
+              type="radio"
+              id="q2_2"
+              name="q2"
+              value="2"
+              onclick="{GetAnswers(1, this)}"
+            />
+            A social engineering technique in which attackers use deceptive emails or messages to trick individuals into revealing sensitive information or performing certain actions.
+          </label>
+          <label for="q2_3">
+            <input
+              type="radio"
+              id="q2_3"
+              name="q2"
+              value="3"
+              onclick="{GetAnswers(1, this)}"
+            />
+            A distributed denial-of-service (DDoS) attack that overwhelms a target's servers with a massive amount of traffic, causing disruption of services.
+          </label>
+          <label for="q2_4">
+            <input
+              type="radio"
+              id="q2_4"
+              name="q2"
+              value="4"
+              onclick="{GetAnswers(1, this)}"
+            />
+            A form of malware that replicates itself across multiple devices, often through removable media or network shares, to spread and cause harm.
+          </label>
+        </fieldset>
+      </article>
 
-        <div id="nav">
-    
-          <ul>
-            <li><a id = "navlinks" href="index.html">Home</a></li>
-    
-            <l1 id="logo">Quiz</l1>
-    
-          </ul>
-    
+      <!-- Question 3 -->
+      <article id="q3">
+        <header>
+          <strong>Question 3: Which email is wrong?</strong>
+        </header>
+
+        <fieldset>
+          <label for="q3_1">
+            <input
+              type="radio"
+              id="q3_1"
+              name="q3"
+              value="1"
+              onclick="{GetAnswers(2, this)}"
+            />
+            From: jane.doe@popular.com
+          </label>
+          <label for="q3_2">
+            <input
+              type="radio"
+              id="q3_2"
+              name="q3"
+              value="2"
+              onclick="{GetAnswers(2, this)}"
+            />
+            From: primary@amazon.com.
+          </label>
+          <label for="q3_3">
+            <input
+              type="radio"
+              id="q3_3"
+              name="q3"
+              value="3"
+              onclick="{GetAnswers(2, this)}"
+            />
+            From: pedro@asem.gov
+          </label>
+          <label for="q3_4">
+            <input
+              type="radio"
+              id="q3_4"
+              name="q3"
+              value="4"
+              onclick="{GetAnswers(2, this)}"
+            />
+            From: HacnielCardona@gmail.co
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 4 -->
+      <article id="q4">
+        <header>
+          <strong>Question 4: Which one is a phishing email:</strong>
+        </header>
+
+        <fieldset>
+          <label for="q4_1">
+            <input
+              type="radio"
+              id="q4_1"
+              name="q4"
+              value="1"
+              onclick="{GetAnswers(3, this)}"
+            />
+            "Dear customer, we noticed some unusual activity on your account.
+            Could you please provide us with your login credentials to verify
+            your identity?"
+          </label>
+          <label for="q4_2">
+            <input
+              type="radio"
+              id="q4_2"
+              name="q4"
+              value="2"
+              onclick="{GetAnswers(3, this)}"
+            />
+            "Congratulations! You have won a free vacation package. To claim
+            your prize, please provide us with your credit card information for
+            verification purposes."
+          </label>
+          <label for="q4_3">
+            <input
+              type="radio"
+              id="q4_3"
+              name="q4"
+              value="3"
+              onclick="{GetAnswers(3, this)}"
+            />
+            "Urgent action required: Your account will be suspended unless you
+            update your personal information immediately. Click on the link
+            below to proceed."
+          </label>
+          <label for="q4_4">
+            <input
+              type="radio"
+              id="q4_4"
+              name="q4"
+              value="4"
+              onclick="{GetAnswers(3, this)}"
+            />
+            All of the above
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 5 -->
+      <article id="q5">
+        <header>
+          <strong
+            >Question 5: "As part of our security measures, we require you to
+            provide your Social Security Number and date of birth. Failure to
+            comply may result in account suspension." Is this a phishing email?
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q5_1">
+            <input
+              type="radio"
+              id="q5_1"
+              name="q5"
+              value="1"
+              onclick="{GetAnswers(4, this)}"
+            />
+            Yes
+          </label>
+          <label for="q5_2">
+            <input
+              type="radio"
+              id="q5_2"
+              name="q5"
+              value="2"
+              onclick="{GetAnswers(4, this)}"
+            />
+            No
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 6 -->
+      <article id="q6">
+        <header>
+          <strong>Question 6: Which one is a common phishing technique?</strong>
+        </header>
+
+        <fieldset>
+          <label for="q6_1">
+            <input
+              type="radio"
+              id="q6_1"
+              name="q6"
+              value="1"
+              onclick="{GetAnswers(5, this)}"
+            />
+            Utilizing a software vulnerability to inject malicious code into a website, allowing unauthorized access to user data.
+          </label>
+          <label for="q6_2">
+            <input
+              type="radio"
+              id="q6_2"
+              name="q6"
+              value="2"
+              onclick="{GetAnswers(5, this)}"
+            />
+            Sending deceptive emails that appear to be from a legitimate bank, requesting the recipient to click on a link and enter their login credentials.
+          </label>
+          <label for="q6_3">
+            <input
+              type="radio"
+              id="q6_3"
+              name="q6"
+              value="3"
+              onclick="{GetAnswers(5, this)}"
+            />
+            Generating a massive amount of login attempts in quick succession to gain unauthorized access to an account.
+          </label>
+          <label for="q6_4">
+            <input
+              type="radio"
+              id="q6_4"
+              name="q6"
+              value="4"
+              onclick="{GetAnswers(5, this)}"
+            />
+            Creating a malicious website that appears identical to a popular online shopping platform, aiming to steal credit card information from unsuspecting users.
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 7 -->
+      <article id="q7">
+        <header>
+          <strong
+            >Question 7: How can you detect if its a phishing email
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q7_1">
+            <input
+              type="radio"
+              id="q7_1"
+              name="q7"
+              value="1"
+              onclick="{GetAnswers(6, this)}"
+            />
+            Poor grammar
+          </label>
+          <label for="q7_2">
+            <input
+              type="radio"
+              id="q7_2"
+              name="q7"
+              value="2"
+              onclick="{GetAnswers(6, this)}"
+            />
+            Talks directly
+          </label>
+          <label for="q7_3">
+            <input
+              type="radio"
+              id="q7_3"
+              name="q7"
+              value="3"
+              onclick="{GetAnswers(6, this)}"
+            />
+            Is someone you know
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 8 -->
+      <article id="q8">
+        <header>
+          <strong
+            >Question 8: "Important notice: Your email account will be
+            deactivated unless you give me your password". Is this a phishing
+            email?
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q8_1">
+            <input
+              type="radio"
+              id="q8_1"
+              name="q8"
+              value="1"
+              onclick="{GetAnswers(7, this)}"
+            />
+            Yes
+          </label>
+          <label for="q8_2">
+            <input
+              type="radio"
+              id="q8_2"
+              name="q8"
+              value="2"
+              onclick="{GetAnswers(7, this)}"
+            />
+            No
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 9 -->
+      <article id="q9">
+        <header>
+          <strong
+            >Question 9: To protect against phishing attacks, individuals should
+            follow secure browsing and email practices, such as:</strong
+          >
+        </header>
+
+        <fieldset>
+          <label for="q9_1">
+            <input
+              type="radio"
+              id="q9_1"
+              name="q9"
+              value="1"
+              onclick="{GetAnswers(8, this)}"
+            />
+            Verifying website security
+          </label>
+          <label for="q9_2">
+            <input
+              type="radio"
+              id="q9_2"
+              name="q9"
+              value="2"
+              onclick="{GetAnswers(8, this)}"
+            />
+            Exercising caution with email attachments and links
+          </label>
+          <label for="q9_3">
+            <input
+              type="radio"
+              id="q9_3"
+              name="q9"
+              value="3"
+              onclick="{GetAnswers(8, this)}"
+            />
+            Sharing information cautiously
+          </label>
+          <label for="q9_4">
+            <input
+              type="radio"
+              id="q9_4"
+              name="q9"
+              value="4"
+              onclick="{GetAnswers(8, this)}"
+            />
+            All of the above
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 10 -->
+      <article id="q10">
+        <header>
+          <strong>Question 10:</strong>
+
+          <blockquote>
+            <p>Subject: Urgent Account Security Update Required</p>
+
+            <p>Dear Nordiel Efrain Cardona,</p>
+
+            <p>
+              We are reaching out to you regarding an important account security
+              update. Your safety is our top priority, and we kindly ask for
+              your immediate attention to ensure the protection of your account.
+            </p>
+
+            <p>
+              To complete the security update, please take the following steps:
+            </p>
+
+            <ol>
+              <li>
+                Log in to your account using our official website or mobile app.
+              </li>
+              <li>Navigate to the "Account Settings" or "Security" section.</li>
+              <li>
+                Update your password to a strong and unique combination of
+                characters.
+              </li>
+              <li>Enable two-factor authentication for enhanced security.</li>
+            </ol>
+
+            <p>
+              Remember, Cyber Industrial will never request your password or
+              sensitive information via email. Stay cautious and avoid clicking
+              on suspicious links.
+            </p>
+
+            <p>
+              For any concerns or assistance, our dedicated support team is
+              ready to help. Contact us at 787-279-1912.
+            </p>
+            <p>
+              Thank you for your immediate attention to this matter. We
+              appreciate your trust and look forward to providing you with a
+              secure experience.
+            </p>
+            <p>Sincerely, Edwin M. Vazquez Vega</p>
+
+            <p>Technician</p>
+            <p>Security industrial</p>
+          </blockquote>
+
+          <strong>Is this a phishing email?</strong>
+        </header>
+
+        <fieldset>
+          <label for="q10_1">
+            <input
+              type="radio"
+              id="q10_1"
+              name="q10"
+              value="1"
+              onclick="{GetAnswers(9, this)}"
+            />
+            Yes
+          </label>
+          <label for="q10_2">
+            <input
+              type="radio"
+              id="q10_2"
+              name="q10"
+              value="2"
+              onclick="{GetAnswers(9, this)}"
+            />
+            No
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 11 -->
+      <article id="q11">
+        <header>
+          <strong>
+            Question 11: Spear phishing is a form of phishing that targets
+            specific individuals or organizations.
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q11_1">
+            <input
+              type="radio"
+              id="q11_1"
+              name="q11"
+              value="1"
+              onclick="{GetAnswers(10, this)}"
+            />
+            True
+          </label>
+          <label for="q11_2">
+            <input
+              type="radio"
+              id="q11_2"
+              name="q11"
+              value="2"
+              onclick="{GetAnswers(10, this)}"
+            />
+            False
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 12 -->
+      <article id="q12">
+        <header>
+          <strong>
+            Question 12: Vishing is a type of phishing that involves attackers
+            using phone calls to deceive victims.
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q12_1">
+            <input
+              type="radio"
+              id="q12_1"
+              name="q12"
+              value="1"
+              onclick="{GetAnswers(11, this)}"
+            />
+            True
+          </label>
+          <label for="q12_2">
+            <input
+              type="radio"
+              id="q12_2"
+              name="q12"
+              value="2"
+              onclick="{GetAnswers(11, this)}"
+            />
+            False
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 13 -->
+      <article id="q13">
+        <header>
+          <strong>
+            Question 13: Search engine phishing involves attackers creating
+            fraudulent websites that closely resemble popular search engines.
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q13_1">
+            <input
+              type="radio"
+              id="q13_1"
+              name="q13"
+              value="1"
+              onclick="{GetAnswers(12, this)}"
+            />
+            True
+          </label>
+          <label for="q13_2">
+            <input
+              type="radio"
+              id="q13_2"
+              name="q13"
+              value="2"
+              onclick="{GetAnswers(12, this)}"
+            />
+            False
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 14 -->
+      <article id="q14">
+        <header>
+          <strong>
+            Question 14: Whaling is a form of phishing that targets high-level
+            executives or individuals with access to sensitive company
+            information.
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q14_1">
+            <input
+              type="radio"
+              id="q14_1"
+              name="q14"
+              value="1"
+              onclick="{GetAnswers(13, this)}"
+            />
+            True
+          </label>
+          <label for="q14_2">
+            <input
+              type="radio"
+              id="q14_2"
+              name="q14"
+              value="2"
+              onclick="{GetAnswers(13, this)}"
+            />
+            False
+          </label>
+        </fieldset>
+      </article>
+
+      <!-- Question 15 -->
+      <article id="q15">
+        <header>
+          <strong>
+            Question 15: Clone phishing involves attackers creating a nearly
+            identical replica of a legitimate email, with slight modifications
+            to deceive victims.
+          </strong>
+        </header>
+
+        <fieldset>
+          <label for="q15_1">
+            <input
+              type="radio"
+              id="q15_1"
+              name="q15"
+              value="1"
+              onclick="{GetAnswers(14, this)}"
+            />
+            True
+          </label>
+          <label for="q15_2">
+            <input
+              type="radio"
+              id="q15_2"
+              name="q15"
+              value="2"
+              onclick="{GetAnswers(14, this)}"
+            />
+            False
+          </label>
+        </fieldset>
+      </article>
+
+      <button onclick="{ShowCorrectAnswers()}">See results</button>
+
+      <h3>Score: <span id="result"></span></h3>
+    </main>
+
+    <footer>
+      <div class="grid">
+        <div class="page-footer-img">
+          <img src="public/inter-bayamon-logo.png" alt="inter bayamon logo" />
         </div>
-    
+
+        <div class="page-footer-info">
+          <p class="page-footer-info-header">
+            <strong
+              >Universidad Interamericana <br />
+              Master Workforce</strong
+            >
+          </p>
+
+          <p><strong>Instituto de Verano 2023</strong></p>
+          <p><strong>Grupo de Trabajo</strong></p>
+        </div>
+
+        <div class="page-footer-img">
+          <img src="public/inter-san-german.jpg" alt="inter san german logo" />
+        </div>
       </div>
-    <!-- Nav bar end -->
+    </footer>
 
-    <!-- Questions -->
-    <div id="question-style">
-
-        <section id="q0">
-
-            <h3>Question 1: When someone sends you a fishy email most of the time will be direct or indirect?</h3>
-
-            <label>
-                <input type="radio" name="question_0" value="1" onclick="Answers(0, this)"> Direct<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_0" value="2" onclick="Answers(0, this)"> Indirect<br>
-            </label>
-
-        </section>
-
-        <!-- Q1 -->
-        <section id="q1">
-
-            <h3>Question 2: Definition of phishing attack</h3>
-
-            <label>
-                <input type="radio" name="question_1" value="1" onclick="Answers(1, this)"> To help detect virus<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_1" value="2" onclick="Answers(1, this)"> To do brutforce<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_1" value="3" onclick="Answers(1, this)"> To trick revealing sensitive information<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_1" value="4" onclick="Answers(1, this)"> A password manager<br>
-            </label>
-
-        </section>
-        <!-- Q1 end -->
-
-        <!-- Q2 -->
-        <section id="q2">
-
-            <h3>Question 3: Which email is wrong?</h3>
-
-            <label>
-                <input type="radio" name="question_2" value="1" onclick="Answers(2, this)"> From: jane.doe@popular.com<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_2" value="2" onclick="Answers(2, this)"> From: primary@amazon.com.<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_2" value="3" onclick="Answers(2, this)"> From: pedro@asem.gov<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_2" value="4" onclick="Answers(2, this)"> From: HacnielCardona@gmail.com<br>
-            </label>
-
-        </section>
-        <!-- Q2 end -->
-
-        <!-- Q3 -->
-        <section id="q3">
-
-            <h3>Question 4: Which one is a phishing email:</h3>
-
-            <label>
-                <input type="radio" name="question_3" value="1" onclick="Answers(3, this)">Dear customer, we noticed some unusual activity on your account. Could you please provide us with your login credentials to verify your identity?<br><br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_3" value="2" onclick="Answers(3, this)">"Congratulations! You have won a free vacation package. To claim your prize, please provide us with your credit card information for verification purposes."<br><br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_3" value="3" onclick="Answers(3, this)">"Urgent action required: Your account will be suspended unless you update your personal information immediately. Click on the link below to proceed."<br><br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_3" value="4" onclick="Answers(3, this)">all of the above<br>
-            </label>
-
-        </section>
-        <!-- Q3 end -->
-
-        <!-- Q4  -->
-        <section id="q4">
-
-            <h3>Question 5: As part of our security measures, we require you to provide your Social Security number and date of birth. Failure to comply may result in account suspension." Is it a phishing email?</h3>
-
-            <label>
-                <input type="radio" name="question_4" value="1" onclick="Answers(4, this)">Yes<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_4" value="2" onclick="Answers(4, this)">No<br>
-            </label>
-
-        </section>
-        <!-- Q4 end -->
-
-        <!-- Q5 -->
-        <section id="q5">
-
-            <h3>Question 6: Which one is a common phishing technique?</h3>
-
-            <label>
-                <input type="radio" name="question_5" value="1" onclick="Answers(5, this)">Robbing a bank<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_5" value="2" onclick="Answers(5, this)">Social media<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_5" value="3" onclick="Answers(5, this)">Talking to a friend<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_5" value="4" onclick="Answers(5, this)">Taking ideas from someone<br>
-            </label>
-
-        </section>
-        <!-- Q5 end -->
-
-        <!-- Q6 -->
-        <section id="q6">
-
-            <h3>Question 7: How can you detect if its a phishing email</h3>
-
-            <label>
-                <input type="radio" name="question_6" value="1" onclick="Answers(6, this)">Poor grammar<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_6" value="2" onclick="Answers(6, this)">Talks directly<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_6" value="3" onclick="Answers(6, this)">Is someone you know<br>
-            </label>
-        </section>
-        <!-- Q6 end -->
-
-        <!-- Q7 -->
-        <section id="q7">
-
-            <h3>Question 8: "Important notice: Your email account will be deactivated unless you give me your password". Is this is a phishing email</h3>
-
-            <label>
-                <input type="radio" name="question_7" value="1" onclick="Answers(7, this)">Yes<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_7" value="2" onclick="Answers(7, this)">No<br>
-            </label>
-
-        </section>
-        <!-- Q7 end -->
-
-        <!-- Q8 -->
-        <section id="q8">
-
-            <h3>Question 9: To protect against phishing attacks, individuals should follow secure browsing and email practices, such as:</h3>
-
-            <label>
-                <input type="radio" name="question_8" value="1" onclick="Answers(8, this)">Verifying website security<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_8" value="2" onclick="Answers(8, this)">Exercising caution with email attachments and links<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_8" value="3" onclick="Answers(8, this)">Sharing information cautiously<br>
-            </label>
-            <label>
-                <input type="radio" name="question_8" value="4" onclick="Answers(8, this)">All of the above<br>
-            </label>
-
-        </section>
-        <!-- Q8 end -->
-
-        <!-- Q9-->
-        <section id="q9">
-
-            <h3>Question 10: 
-            <br>Subject: Urgent Account Security Update Required</br> 
-
-             <br>Dear Nordiel Efrain Cardona,<br>
-
-             <br>We are reaching out to you regarding an important account security update. Your safety is our top priority, and we kindly ask for your immediate attention to ensure the protection of your account.</br>
-
-T           <br> To complete the security update, please take the following steps:</br>
-
-            <br>1: Log in to your account using our official website or mobile app.</br>
-            <br>2: Navigate to the "Account Settings" or "Security" section.</br>
-            <br>3: Update your password to a strong and unique combination of characters.</br>
-            <br>4: Enable two-factor authentication for enhanced security.</br>
-            <br>Remember, Cyber industrial will never request your password or sensitive information via email. 
-                Stay cautious and avoid clicking on suspicious links.</br>
-            <br>For any concerns or assistance, our dedicated support team is ready to help.
-             Contact us at 787-279-1912.</br>
-             <br>Thank you for your immediate attention to this matter. 
-             We appreciate your trust and look forward to providing you with a secure experience.</br>
-             <br>Sincerely,</br>
-             <br>Edwin M. Vazquez Vega</br>
-             <br>Technician</br>
-             <br>Security industrial</br>
-             <br>Is this is a phishing email?</br>
-
-            </h3>
-
-            <label>
-                <input type="radio" name="question_9" value="1" onclick="Answers(9, this)">Yes<br>
-            </label>
-
-            <label>
-                <input type="radio" name="question_9" value="2" onclick="Answers(9, this)">No<br>
-            </label>
-
-        </section>
-        <!-- Q9 end -->
-
-    </div>
-
-    <!-- Corrent answers -->
-    <button onclick="CorrectAnswers()" id="test3">Finish</button>
-
-    <h2>Correct answers: <span id="result"></span></h2>
-
-</body>
-
+    <script src="js/quiz.js"></script>
+  </body>
 </html>
